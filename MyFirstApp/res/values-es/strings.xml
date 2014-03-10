@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Buscar</string>
+    <string name="title">Tus restaurantes cerca</string>
+    <string name="location">Localización</string>
+    <string name="type">Tipo de cocina</string>
+    <string-array name="typeRests">
+	    <item>Tradicional</item>
+	    <item>Creativa</item>
+	</string-array>
+</resources>

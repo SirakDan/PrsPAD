@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My First App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">My rest app</string>
+    <string name="search">Search</string>
+    <string name="location">Location</string>
+    <string name="type">Type of restaurant</string>
+	<string-array name="typeRests">
+	    <item>Traditional</item>
+	    <item>Creative</item>
+	</string-array>
+</resources>
