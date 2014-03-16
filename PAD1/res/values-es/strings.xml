@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Restaurant Finder</string>
+    <string name="action_settings">opciones</string>
+    <string name="title">Encuentra tu restaurante</string>
+    <string name="resName">Nombre</string>
+    <string name="resCountry">País</string>
+    <string-array name="countries">
+        <item >Elige un país</item>
+        <item >España</item>
+        <item >Portugal</item>
+        <item >Francia</item>
+        <item >Alemania</item>
+        <item >Italia</item>
+        <item >China</item>
+        <item >Rusia</item>
+        <item >Japón</item>
+        <item >Finlandia</item>
+        <item >Noruega</item>
+    </string-array>
+    <string name="spinnerPrompt">Elige un país</string><string-array name="citiesSpain">
+        <item>Elige una ciudad</item>
+        <item>Madrid</item>
+        <item>Toledo</item>
+        <item>Cuenca</item>
+    </string-array>
+    
+    <string-array name="citiesPortugal">
+        <item >Elige una ciudad</item>
+        <item >Aveiro</item>
+        <item >Oporto</item>
+        <item >Lisboa</item>
+    </string-array>
+    
+</resources>
