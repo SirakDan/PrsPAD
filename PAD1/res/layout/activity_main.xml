@@ -81,7 +81,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/search" />
-
+<!--
     <EditText
         android:id="@+id/priceText"
         android:layout_width="wrap_content"
@@ -92,6 +92,7 @@
         android:ems="10"
         android:hint="@string/price"
         android:inputType="numberDecimal" />
+-->
 
     <CheckBox
         android:id="@+id/noNumberCheckbox"
@@ -121,5 +122,13 @@
         android:layout_alignRight="@+id/cityText"
         android:layout_toRightOf="@+id/numberText"
         android:entries="@array/tipeOfRoad" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nationalitiesSpinner" />
 
 </RelativeLayout>
