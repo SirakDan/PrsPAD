@@ -20,20 +20,37 @@
         <item>Finland</item>
         <item>Norway</item>
     </string-array>
+    <string-array name="nationalities">
+        <item>Anything</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Italian</item>
+        <item>Chinese</item>
+        <item>Indian</item>
+        <item>Japanese</item>
+        <item>American</item>
+        <item>Mexican</item>
+    </string-array>
 
     <string name="spinnerPrompt">Chose a country</string>
+    <string name="typeFieldName">Choose type</string>
 
-    <string-array name="citiesSpain">
-        <item>Chose a city</item>
-        <item>Madrid</item>
-        <item>Toledo</item>
-        <item>Cuenca</item>
+    <string-array name="typeFieldArray">
+        <item>Anything</item>
+        <item>Traditional</item>
+        <item>Creative</item>
     </string-array>
-    <string-array name="citiesPortugal">
-        <item>Chose a city</item>
-        <item>Aveiro</item>
-        <item>Porto</item>
-        <item>Lisboa</item>
-    </string-array>
+
+    <string name="country">Country</string>
+    <string name="price">Price</string>
+    <string name="city">City</string>
+    <string name="street">Street</string>
+    <string name="road">Road</string>
+    <string name="number">Number</string>
+    <string name="noNumber">S/N</string>
+    <string name="search">Search</string>
+    <string name="back">Back</string>
+    <string name="title_activity_results">Results</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
