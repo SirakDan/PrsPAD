@@ -22,7 +22,7 @@
     </string-array>
     
 	<string-array name="nationalities">
-        <item>Cualquiera</item>
+        <item>De cualquier país</item>
         <item>Española</item>
         <item>Francesa</item>
         <item>Italiana</item>
@@ -35,7 +35,7 @@
     <string name="spinnerPrompt">Elige un país</string>
     <string name="typeFieldName">Elige tipo</string>
     <string-array name="typeFieldArray">
-        <item >Cualquiera</item>
+        <item >De cualquier tipo</item>
         <item >Tradicional</item>
         <item >Creativa</item>
     </string-array>
@@ -47,9 +47,9 @@
     <string name="number">Número</string>
     <string name="noNumber">S/N</string>
     <string name="search">Buscar</string>
-    
+    <string name="back">Atrás</string>
 	<string-array name="tipeOfRoad">
-        <item>Tipo</item>
+        <item>Tipo de vía</item>
         <item>Travesía</item>
         <item>Calle</item>
         <item>Avenida</item>
