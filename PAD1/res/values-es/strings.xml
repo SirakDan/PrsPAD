@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Encuentra tu restaurante</string>
+    <string name="action_settings">Opciones</string>
+    <string name="title">Encuentra tu restaurantet</string>
+    <string name="resName">Nombre</string>
+    <string name="resCountry">País</string>
+
+    <string-array name="countries">
+        <item>Chose a country</item>
+        <item>Spain</item>
+        <item>Portugal</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>China</item>
+        <item>Russia</item>
+        <item>Japan</item>
+        <item>Finland</item>
+        <item>Norway</item>
+    </string-array>
+    
+	<string-array name="nationalities">
+        <item>Cualquiera</item>
+        <item>Española</item>
+        <item>Francesa</item>
+        <item>Italiana</item>
+        <item>China</item>
+        <item>India</item>
+        <item>Japonesa</item>
+        <item>Americana</item>
+        <item>Mejicana</item>
+    </string-array>
+    <string name="spinnerPrompt">Elige un país</string>
+    <string name="typeFieldName">Elige tipo</string>
+    <string-array name="typeFieldArray">
+        <item >Cualquiera</item>
+        <item >Tradicional</item>
+        <item >Creativa</item>
+    </string-array>
+    <string name="country">País</string>
+    <string name="price">Precio</string>
+    <string name="city">Ciudad</string>
+    <string name="street">Calle</string>
+    <string name="road">Carretera</string>
+    <string name="number">Número</string>
+    <string name="noNumber">S/N</string>
+    <string name="search">Buscar</string>
+
+</resources>
