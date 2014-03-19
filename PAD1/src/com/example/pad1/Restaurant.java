@@ -8,16 +8,16 @@ public class Restaurant {
 	private String location;
 	//TODO: comprobar si es necesario.
 	private boolean road;
-	private String locationNumber;
+	private int locationNumber;
 	private String foodType;
 	private String foodNationality;
 	private float meanPrice;
 	
 	
-	
+	//Si no hay nada seleccionado, poner vacío o false.
 	public Restaurant(String name, String country, String city,
 			String locationType, String location, boolean road,
-			String locationNumber, String foodType, String foodNationality,
+			int locationNumber, String foodType, String foodNationality,
 			float meanPrice) {
 		super();
 		this.name = name;
@@ -68,10 +68,10 @@ public class Restaurant {
 	public void setRoad(boolean road) {
 		this.road = road;
 	}
-	public String getLocationNumber() {
+	public int getLocationNumber() {
 		return locationNumber;
 	}
-	public void setLocationNumber(String locationNumber) {
+	public void setLocationNumber(int locationNumber) {
 		this.locationNumber = locationNumber;
 	}
 	public String getFoodType() {
