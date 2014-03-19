@@ -43,25 +43,6 @@
         android:ems="10"
         android:hint="@string/country" />
 
-    <CheckBox
-        android:id="@+id/roadCheckbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/cityText"
-        android:layout_below="@+id/cityText"
-        android:layout_marginTop="14dp"
-        android:text="@string/road" />
-
-    <EditText
-        android:id="@+id/streetText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/countryText"
-        android:layout_alignTop="@+id/roadCheckbox"
-        android:layout_toLeftOf="@+id/roadCheckbox"
-        android:ems="10"
-        android:hint="@string/street" />
-
     <EditText
         android:id="@+id/numberText"
         android:layout_width="wrap_content"
@@ -73,14 +54,6 @@
         android:ems="10"
         android:hint="@string/number"
         android:inputType="number" />
-
-    <CheckBox
-        android:id="@+id/noNumberCheckbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/roadCheckbox"
-        android:layout_alignTop="@+id/numberText"
-        android:text="@string/noNumber" />
 
     <Spinner
         android:id="@+id/typesSpinner"
@@ -119,5 +92,34 @@
         android:ems="10"
         android:hint="@string/price"
         android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/noNumberCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/numberText"
+        android:layout_alignBottom="@+id/numberText"
+        android:layout_alignRight="@+id/tipeOfRoadSinner"
+        android:layout_toRightOf="@+id/numberText"
+        android:text="@string/noNumber" />
+
+    <EditText
+        android:id="@+id/streetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/searchButton"
+        android:layout_below="@+id/cityText"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/street" />
+
+    <Spinner
+        android:id="@+id/tipeOfRoadSinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numberText"
+        android:layout_alignRight="@+id/cityText"
+        android:layout_toRightOf="@+id/numberText"
+        android:entries="@array/tipeOfRoad" />
 
 </RelativeLayout>

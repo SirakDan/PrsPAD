@@ -47,5 +47,13 @@
     <string name="number">Número</string>
     <string name="noNumber">S/N</string>
     <string name="search">Buscar</string>
+    
+	<string-array name="tipeOfRoad">
+        <item>Tipo</item>
+        <item>Travesía</item>
+        <item>Calle</item>
+        <item>Avenida</item>
+        <item>Carretera</item>
+    </string-array>
 
 </resources>
