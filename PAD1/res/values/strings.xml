@@ -21,7 +21,7 @@
         <item>Norway</item>
     </string-array>
     <string-array name="nationalities">
-        <item>Anything</item>
+        <item>From any country</item>
         <item>Spanish</item>
         <item>French</item>
         <item>Italian</item>
@@ -36,7 +36,7 @@
     <string name="typeFieldName">Choose type</string>
 
     <string-array name="typeFieldArray">
-        <item>Anything</item>
+        <item>Any type of food</item>
         <item>Traditional</item>
         <item>Creative</item>
     </string-array>
@@ -52,5 +52,13 @@
     <string name="back">Back</string>
     <string name="title_activity_results">Results</string>
     <string name="hello_world">Hello world!</string>
+
+	<string-array name="tipeOfRoad">
+        <item>Type of road</item>
+        <item>Passage</item>
+        <item>Road</item>
+        <item>Avenue</item>
+        <item>Road</item>
+    </string-array>
 
 </resources>
