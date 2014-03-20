@@ -1,5 +1,7 @@
 package com.example.pad1;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -94,6 +96,11 @@ public class MainActivity extends Activity {
 											, typeValue
 											, nationalityValue
 											, priceValue);
+				
+				RestaurantFinder restFindr = new RestaurantFinder();
+				//ArrayList<Restaurant> restaurants = restFindr.buscaRestaurante(r);
+				
+				
 				
 			}
 		});
