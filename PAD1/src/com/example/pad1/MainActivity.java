@@ -27,7 +27,6 @@ public class MainActivity extends Activity {
 				Intent changeWindow = new Intent(MainActivity.this, Results.class);
 				startActivity(changeWindow);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
-				
 				// Los filtros de la interfaz.
 				EditText restaurantName = (EditText) findViewById(R.id.nameText);
 				String restaurantNameValue = restaurantName.getText().toString();
@@ -42,24 +41,49 @@ public class MainActivity extends Activity {
 				String streetValue = street.getText().toString();
 				
 				Spinner streetType = (Spinner) findViewById(R.id.nationalitiesSpinner);
-				String streetTypeValue = streetType.getSelectedItem().toString();
+				String streetTypeValue;
+				if(streetType.getSelectedItemPosition() == 0){
+					streetTypeValue = "";
+				}else{
+					streetTypeValue = streetType.getSelectedItem().toString();
+				}
 				
 				EditText streetNumber = (EditText) findViewById(R.id.numberText);
-				int streetNumberValue = Integer.parseInt(streetNumber.getText().toString());
+				int streetNumberValue;
+				if(!streetNumber.getText().toString().equals("")){
+					streetNumberValue = Integer.parseInt(streetNumber.getText().toString());
+				}else{
+					streetNumberValue = -1;
+				}
 				
 				CheckBox noNumber = (CheckBox) findViewById(R.id.noNumberCheckbox);
 				Boolean noNumberValue = noNumber.isChecked();
 				
 				Spinner type = (Spinner) findViewById(R.id.typesSpinner); // Creativa | Tradicional.
-				String typeValue = type.getSelectedItem().toString();
+				String typeValue;
+				if(type.getSelectedItemPosition() == 0){
+					typeValue = "";
+				}else{
+					typeValue = streetType.getSelectedItem().toString();
+				}
 				
 				Spinner nationality = (Spinner) findViewById(R.id.nationalitiesSpinner);
-				String nationalityValue = nationality.getSelectedItem().toString();
+				String nationalityValue;
+				if(nationality.getSelectedItemPosition() == 0){
+					nationalityValue = "";
+				}else{
+					nationalityValue = streetType.getSelectedItem().toString();
+				}
 				
 				EditText price = (EditText) findViewById(R.id.priceText);
-				Float priceValue = Float.parseFloat(price.getText().toString());
+				float priceValue;
+				if(!price.getText().toString().equals("")){
+					priceValue = Float.parseFloat(price.getText().toString());
+				}else{
+					priceValue = -1;
+				}
 				
-				
+				//Log.v("Hola !!!!!!!!!!!!", Integer.toString(streetType.getSelectedItemPosition()));
 				Restaurant r = new Restaurant(restaurantNameValue
 											, countryValue
 											, cityValue
