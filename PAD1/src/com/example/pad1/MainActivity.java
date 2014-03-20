@@ -30,27 +30,46 @@ public class MainActivity extends Activity {
 				
 				// Los filtros de la interfaz.
 				EditText restaurantName = (EditText) findViewById(R.id.nameText);
-				EditText country = (EditText) findViewById(R.id.countryText);
-				EditText city = (EditText) findViewById(R.id.cityText);
-				EditText street = (EditText) findViewById(R.id.streetText);
-				//CheckBox isARoad = (CheckBox) findViewById(R.id.roadCheckbox);
-				EditText streetNumber = (EditText) findViewById(R.id.numberText);
-				CheckBox noNumber = (CheckBox) findViewById(R.id.noNumberCheckbox);
-				Spinner type = (Spinner) findViewById(R.id.typesSpinner); // Creativa | Tradicional.
-				Spinner nationality = (Spinner) findViewById(R.id.nationalitiesSpinner);
-				EditText price = (EditText) findViewById(R.id.priceText);
+				String restaurantNameValue = restaurantName.getText().toString();
 				
-				Log.v("hola !!!!!!!!!", type.getSelectedItem().toString());
-				Restaurant r = new Restaurant(restaurantName.getText().toString()
-											, country.getText().toString()
-											, city.getText().toString()
-											, "LocationType Desconocido (asdf, falta en la interfaz)"
-											, street.getText().toString()
-											, noNumber.isChecked()
-											, Integer.parseInt(streetNumber.getText().toString())
-											, type.getSelectedItem().toString()
-											, nationality.getSelectedItem().toString()
-											, Float.parseFloat(price.getText().toString()));
+				EditText country = (EditText) findViewById(R.id.countryText);
+				String countryValue = country.getText().toString();
+				
+				EditText city = (EditText) findViewById(R.id.cityText);
+				String cityValue = city.getText().toString();
+				
+				EditText street = (EditText) findViewById(R.id.streetText);
+				String streetValue = street.getText().toString();
+				
+				Spinner streetType = (Spinner) findViewById(R.id.nationalitiesSpinner);
+				String streetTypeValue = streetType.getSelectedItem().toString();
+				
+				EditText streetNumber = (EditText) findViewById(R.id.numberText);
+				int streetNumberValue = Integer.parseInt(streetNumber.getText().toString());
+				
+				CheckBox noNumber = (CheckBox) findViewById(R.id.noNumberCheckbox);
+				Boolean noNumberValue = noNumber.isChecked();
+				
+				Spinner type = (Spinner) findViewById(R.id.typesSpinner); // Creativa | Tradicional.
+				String typeValue = type.getSelectedItem().toString();
+				
+				Spinner nationality = (Spinner) findViewById(R.id.nationalitiesSpinner);
+				String nationalityValue = nationality.getSelectedItem().toString();
+				
+				EditText price = (EditText) findViewById(R.id.priceText);
+				Float priceValue = Float.parseFloat(price.getText().toString());
+				
+				
+				Restaurant r = new Restaurant(restaurantNameValue
+											, countryValue
+											, cityValue
+											, streetTypeValue
+											, streetValue
+											, noNumberValue
+											, streetNumberValue
+											, typeValue
+											, nationalityValue
+											, priceValue);
 				
 			}
 		});
