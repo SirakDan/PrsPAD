@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -26,6 +28,13 @@ public class MainActivity extends Activity {
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
 		});
+        
+        SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);
+        TextView priceText = (TextView) findViewById(R.id.priceTextView);
+        priceBar.setOnSeekBarChangeListener(this){
+        	
+        	
+        }
     }
 
 
