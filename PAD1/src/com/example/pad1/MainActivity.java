@@ -98,7 +98,8 @@ public class MainActivity extends Activity {
 											, priceValue);
 				
 				RestaurantFinder restFindr = new RestaurantFinder();
-				//ArrayList<Restaurant> restaurants = restFindr.buscaRestaurante(r);
+				restFindr.iniciaRestaurantes();
+				ArrayList<Restaurant> restaurants = restFindr.buscaRestaurante(r);
 				
 				
 				
