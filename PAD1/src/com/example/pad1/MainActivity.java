@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -27,7 +28,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent changeWindow = new Intent(MainActivity.this, Results.class);
-				startActivity(changeWindow);
+				
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 				// Los filtros de la interfaz.
 				EditText restaurantName = (EditText) findViewById(R.id.nameText);
@@ -100,7 +101,10 @@ public class MainActivity extends Activity {
 				RestaurantFinder restFindr = new RestaurantFinder();
 				restFindr.iniciaRestaurantes();
 				ArrayList<Restaurant> restaurants = restFindr.buscaRestaurante(r);
-				
+				Bundle b = new Bundle();
+				b.putParcelableArrayList("restaurants", (ArrayList<? extends Parcelable>) restaurants);
+				changeWindow.putExtra("restaurants", b);
+				startActivity(changeWindow);
 				
 				
 			}

@@ -1,6 +1,9 @@
 package com.example.pad1;
 
-public class Restaurant {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Restaurant implements Parcelable{
 	private String name;
 	private String country;
 	private String city;
@@ -92,6 +95,41 @@ public class Restaurant {
 	public void setMeanPrice(float meanPrice) {
 		this.meanPrice = meanPrice;
 	}
+
+
+	@Override
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		dest.writeString(name);
+		dest.writeString(country);
+		dest.writeString(city);
+		dest.writeString(locationType);
+		dest.writeString(location);
+		dest.writeByte((byte) (hasNumber ? 1 : 0));
+		dest.writeInt(locationNumber);
+		dest.writeString(foodType);
+		dest.writeString(foodNationality);
+		dest.writeFloat(meanPrice);
+		
+	}
 	
+	public Restaurant(Parcel in) {
+		super();
+		name = in.readString();
+		country = in.readString();
+		city = in.readString();
+		locationType = in.readString();
+		location = in.readString();
+		hasNumber = in.readByte() != 0;
+		locationNumber = in.readInt();
+		foodType = in.readString();
+		foodNationality = in.readString();
+		meanPrice = in.readFloat();
+	}
 	
 }

@@ -17,6 +17,7 @@ public final class R {
     public static final class array {
         public static final int countries=0x7f070000;
         public static final int nationalities=0x7f070001;
+        public static final int tipeOfRoad=0x7f070003;
         public static final int typeFieldArray=0x7f070002;
     }
     public static final class attr {
@@ -40,14 +41,14 @@ public final class R {
         public static final int cityText=0x7f0a0001;
         public static final int countryText=0x7f0a0002;
         public static final int nameText=0x7f0a0000;
-        public static final int nationalitiesSpinner=0x7f0a0008;
-        public static final int noNumberCheckbox=0x7f0a0006;
-        public static final int numberText=0x7f0a0005;
-        public static final int priceText=0x7f0a000a;
-        public static final int roadCheckbox=0x7f0a0003;
-        public static final int searchButton=0x7f0a0009;
+        public static final int nationalitiesSpinner=0x7f0a0006;
+        public static final int noNumberCheckbox=0x7f0a0009;
+        public static final int numberText=0x7f0a0003;
+        public static final int priceText=0x7f0a0008;
+        public static final int searchButton=0x7f0a0007;
         public static final int streetText=0x7f0a0004;
-        public static final int typesSpinner=0x7f0a0007;
+        public static final int tipeOfRoadSinner=0x7f0a000a;
+        public static final int typesSpinner=0x7f0a0005;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

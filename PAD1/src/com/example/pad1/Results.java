@@ -16,7 +16,7 @@ public class Results extends Activity {
 		
 		Button back = (Button) findViewById(R.id.backButton);
 		back.setOnClickListener(new OnClickListener() {
-			
+		
 			@Override
 			public void onClick(View v) {
 				finish();
