@@ -19,7 +19,7 @@ public class RestaurantFinderTest extends TestCase {
 				123, "Tradicional", "Española", (float) 10.0);
 		test2 = new Restaurant("Restaurante Quico",
 				"", "", "", "", false,
-				123, "", "", (float) -1);
+				-1, "Tradicional", "", (float) -1);
 	}
 
 	protected void tearDown() throws Exception {

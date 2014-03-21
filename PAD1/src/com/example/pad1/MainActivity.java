@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
 				EditText street = (EditText) findViewById(R.id.streetText);
 				String streetValue = street.getText().toString();
 				
-				Spinner streetType = (Spinner) findViewById(R.id.nationalitiesSpinner);
+				Spinner streetType = (Spinner) findViewById(R.id.tipeOfRoadSinner);
 				String streetTypeValue;
 				if(streetType.getSelectedItemPosition() == 0){
 					streetTypeValue = "";
@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
 				if(type.getSelectedItemPosition() == 0){
 					typeValue = "";
 				}else{
-					typeValue = streetType.getSelectedItem().toString();
+					typeValue = type.getSelectedItem().toString();
 				}
 				
 				Spinner nationality = (Spinner) findViewById(R.id.nationalitiesSpinner);
@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 				if(nationality.getSelectedItemPosition() == 0){
 					nationalityValue = "";
 				}else{
-					nationalityValue = streetType.getSelectedItem().toString();
+					nationalityValue = nationality.getSelectedItem().toString();
 				}
 				
 				EditText price = (EditText) findViewById(R.id.priceText);
@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
 				}else{
 					priceValue = -1;
 				}
-				
+
 				//Log.v("Hola !!!!!!!!!!!!", Integer.toString(streetType.getSelectedItemPosition()));
 				Restaurant r = new Restaurant(restaurantNameValue
 											, countryValue
