@@ -131,5 +131,13 @@ public class Restaurant implements Parcelable{
 		foodNationality = in.readString();
 		meanPrice = in.readFloat();
 	}
-	
+	public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
+        public Restaurant createFromParcel(Parcel in) {
+            return new Restaurant(in); 
+        }
+
+        public Restaurant[] newArray(int size) {
+            return new Restaurant[size];
+        }
+    };
 }
