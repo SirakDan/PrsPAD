@@ -36,7 +36,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000c;
+        public static final int action_settings=0x7f0a000d;
         public static final int backButton=0x7f0a000b;
         public static final int cityText=0x7f0a0001;
         public static final int countryText=0x7f0a0002;
@@ -45,6 +45,7 @@ public final class R {
         public static final int noNumberCheckbox=0x7f0a0009;
         public static final int numberText=0x7f0a0003;
         public static final int priceText=0x7f0a0008;
+        public static final int resultadoArea=0x7f0a000c;
         public static final int searchButton=0x7f0a0007;
         public static final int streetText=0x7f0a0004;
         public static final int tipeOfRoadSinner=0x7f0a000a;
