@@ -81,18 +81,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/search" />
-<!--
-    <EditText
-        android:id="@+id/priceText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/nationalitiesSpinner"
-        android:layout_below="@+id/nationalitiesSpinner"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="@string/price"
-        android:inputType="numberDecimal" />
--->
 
     <CheckBox
         android:id="@+id/noNumberCheckbox"
@@ -124,13 +112,20 @@
         android:entries="@array/tipeOfRoad" />
     
     <TextView
-        android:id="@+id/priceTextView"
+        android:id="@+id/priceTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignLeft="@+id/nationalitiesSpinner"
         android:layout_below="@+id/nationalitiesSpinner"
-        android:layout_marginLeft="12dp"
+        android:layout_marginTop="17dp"
         android:text="@string/price" />
+    <TextView
+        android:id="@+id/priceTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priceTextView1"
+        android:layout_below="@+id/priceTextView1"
+        android:text="@string/priceText" />
     
     <SeekBar
         android:id="@+id/priceBar"
@@ -138,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/nameText"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/priceTextView"
+        android:layout_below="@+id/priceTextView2"
         android:contentDescription="@string/price"/>
 
     

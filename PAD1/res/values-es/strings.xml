@@ -40,7 +40,8 @@
         <item >Creativa</item>
     </string-array>
     <string name="country">País</string>
-    <string name="price">Precio</string>
+    <string name="price">Precio: </string>
+    <string name="priceText">Precio: 0€</string>
     <string name="city">Ciudad</string>
     <string name="street">Calle</string>
     <string name="road">Carretera</string>

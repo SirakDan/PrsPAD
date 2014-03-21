@@ -9,9 +9,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity /*implements OnSeekBarChangeListener */{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +31,42 @@ public class MainActivity extends Activity {
 		});
         
         SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);
-        TextView priceText = (TextView) findViewById(R.id.priceTextView);
-        priceBar.setOnSeekBarChangeListener(this){
+        //priceBar.setOnSeekBarChangeListener((OnSeekBarChangeListener) this);
+        
+        
+        
+        priceBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+            TextView priceText = (TextView) findViewById(R.id.priceTextView2);
+            TextView auxPriceText = (TextView) findViewById(R.id.priceTextView1);
+            String aux = (String) auxPriceText.getText();
         	
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+				
+				priceText.setText("" + aux + " " + progress + "€");
+				
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				
+				//priceText.setText("0");
+			}
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				
+			}
         	
-        }
+        
+        });
+        
+        
+        
+        
     }
 
 
@@ -44,6 +76,14 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+/*
+	@Override
+	public void onProgressChanged(SeekBar seekBar, int progress,
+			boolean fromUser) {
+		// TODO Auto-generated method stub
+		
+	}*/
     
     
     
