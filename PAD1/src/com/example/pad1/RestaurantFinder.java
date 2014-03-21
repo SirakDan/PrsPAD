@@ -28,6 +28,24 @@ public class RestaurantFinder {
 		restaurantList.add(new Restaurant("La Colmena",
 				"España", "Pamplona", "Calle", "Tercio", true,
 				13, "Creativa", "Japonesa", (float) 30.0));
+		restaurantList.add(new Restaurant("Los Gabachos",
+				"España", "Cuenca", "Calle", "Badajo", true,
+				5, "Creativa", "Francesa", (float) 150.0));
+		restaurantList.add(new Restaurant("Pape de Puppi !?!",
+				"España", "Madrid", "Avenida", "Gran Via", true,
+				23, "Tradicional", "Italiana", (float) 5.0));
+		restaurantList.add(new Restaurant("Fu Quing Yu",
+				"España", "Cuenca", "Calle", "Chao Chochin", true,
+				69, "Tradicional", "Italiana", (float) 25.0));
+		restaurantList.add(new Restaurant("Tag",
+				"España", "Madrid", "Calle", "Princesa", false,
+				-1, "Tradicional", "India", (float) 12.5));
+		restaurantList.add(new Restaurant("Foster`s Hollywood",
+				"España", "Madrid", "Calle", "Princesa", true,
+				7, "Tradicional", "Americana", (float) 20.6));
+		restaurantList.add(new Restaurant("Ay, cómo pica !",
+				"Portugal", "Lisboa", "Calle", "Desconocida", true,
+				0, "Creativa", "Mejicana", (float) 7.5));
 	}
 	// El primero es el que viene de la interfaz, es el que puede estar vacío
 	public boolean comparaTodosAtribs(Restaurant r1, Restaurant r2){
