@@ -11,11 +11,17 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+<<<<<<< HEAD
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+=======
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
+>>>>>>> origin/Experimentos-visuales-de-Teresa
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity /*implements OnSeekBarChangeListener */{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,6 +115,43 @@ public class MainActivity extends Activity {
 				
 			}
 		});
+        
+        
+        //-----------PRICE SEEK BAR----------------------------------------------------------------------------
+        
+        SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);        
+       
+        priceBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+            TextView priceText = (TextView) findViewById(R.id.priceTextView2);
+            String auxPrice = getResources().getString(R.string.price);
+            String anyPrice = getResources().getString(R.string.priceText);
+        	
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+				
+				if(progress == 0)
+					priceText.setText(anyPrice);
+				else
+					priceText.setText("" + auxPrice + " " + progress + "€");
+				
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				
+			}
+        	
+        });
+        
+        //----------------------------------------------------------------------------------------------------
     }
 
 
@@ -118,26 +161,6 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
-    
-    
-    
-    
-    /*
-    Spinner countries = (Spinner) findViewById(R.id.spinnerCountries);
-    Spinner cities = (Spinner) findViewById(R.id.spinnerCities);
-    
-    
-    countries.
-    
-	 // Create an ArrayAdapter using the string array and a default spinner layout
-	 ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-	         R.array.planets_array, android.R.layout.simple_spinner_item);
- // Specify the layout to use when the list of choices appears
- adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
- // Apply the adapter to the spinner
- spinner.setAdapter(adapter);*/
-    
     
 }
 
