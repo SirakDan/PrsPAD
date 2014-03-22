@@ -105,7 +105,7 @@ public class MainActivity extends Activity {
 				b.putParcelableArrayList("restaurants", (ArrayList<? extends Parcelable>) restaurants);
 				changeWindow.putExtra("restaurants", b);
 				startActivity(changeWindow);
-				
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 				
 			}
 		});
