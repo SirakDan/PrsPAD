@@ -30,21 +30,24 @@ public class MainActivity extends Activity /*implements OnSeekBarChangeListener 
 			}
 		});
         
-        SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);
-        //priceBar.setOnSeekBarChangeListener((OnSeekBarChangeListener) this);
         
+        //-----------PRICE SEEK BAR----------------------------------------------------------------------------
         
-        
+        SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);        
+       
         priceBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 
             TextView priceText = (TextView) findViewById(R.id.priceTextView2);
-            TextView auxPriceText = (TextView) findViewById(R.id.priceTextView1);
-            String aux = (String) auxPriceText.getText();
+            String auxPrice = getResources().getString(R.string.price);
+            String anyPrice = getResources().getString(R.string.priceText);
         	
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				
-				priceText.setText("" + aux + " " + progress + "€");
+				if(progress == 0)
+					priceText.setText(anyPrice);
+				else
+					priceText.setText("" + auxPrice + " " + progress + "€");
 				
 			}
 
@@ -52,7 +55,6 @@ public class MainActivity extends Activity /*implements OnSeekBarChangeListener 
 			public void onStartTrackingTouch(SeekBar seekBar) {
 				// TODO Auto-generated method stub
 				
-				//priceText.setText("0");
 			}
 
 			@Override
@@ -61,12 +63,9 @@ public class MainActivity extends Activity /*implements OnSeekBarChangeListener 
 				
 			}
         	
-        
         });
         
-        
-        
-        
+        //----------------------------------------------------------------------------------------------------
     }
 
 
@@ -76,34 +75,6 @@ public class MainActivity extends Activity /*implements OnSeekBarChangeListener 
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-/*
-	@Override
-	public void onProgressChanged(SeekBar seekBar, int progress,
-			boolean fromUser) {
-		// TODO Auto-generated method stub
-		
-	}*/
-    
-    
-    
-    
-    
-    /*
-    Spinner countries = (Spinner) findViewById(R.id.spinnerCountries);
-    Spinner cities = (Spinner) findViewById(R.id.spinnerCities);
-    
-    
-    countries.
-    
-	 // Create an ArrayAdapter using the string array and a default spinner layout
-	 ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-	         R.array.planets_array, android.R.layout.simple_spinner_item);
- // Specify the layout to use when the list of choices appears
- adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
- // Apply the adapter to the spinner
- spinner.setAdapter(adapter);*/
-    
     
 }
 
