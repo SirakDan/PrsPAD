@@ -53,12 +53,14 @@
     <string name="title_activity_results">Results</string>
     <string name="hello_world">Hello world!</string>
 
-	<string-array name="tipeOfRoad">
+    <string-array name="tipeOfRoad">
         <item>Type of road</item>
         <item>Passage</item>
         <item>Road</item>
         <item>Avenue</item>
         <item>Road</item>
     </string-array>
+
+    <string name="title_activity_description">Description</string>
 
 </resources>

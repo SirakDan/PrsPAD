@@ -3,7 +3,9 @@ package com.example.pad1;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -23,7 +25,7 @@ public class Results extends Activity {
 		Bundle bundle = (Bundle)getIntent().getBundleExtra("restaurants");
 		
 		// Cogemos los restaurantes que cumplen con las restricciones.
-		ArrayList<Restaurant> r = bundle.getParcelableArrayList("restaurants");
+		final ArrayList<Restaurant> r = bundle.getParcelableArrayList("restaurants");
 		
 		//Creamos un array de Cadenas y metemos los nombres.
 		String[] restaurantsNames;
@@ -56,8 +58,11 @@ public class Results extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-				Log.d("Click en ", arg0.getAdapter().getItem(arg2).toString());
-				
+				Log.d("Click en ", r.get(arg2).getName());
+				Intent i = new Intent(Results.this, Description.class);
+				i.putExtra("restaurante", (Parcelable)r.get(arg2));
+				startActivity(i);
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
 		});
 	}
