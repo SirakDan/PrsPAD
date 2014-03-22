@@ -26,7 +26,7 @@ public class MainActivity extends Activity{
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.activity_main);
 	        Button search = (Button) findViewById(R.id.searchButton);
-	        SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);
+	        final SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);
 	        
 	        search.setOnClickListener(new OnClickListener() {
 			
