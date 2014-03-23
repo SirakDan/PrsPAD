@@ -36,6 +36,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int action_settings=0x7f0a000e;
         public static final int backButton=0x7f0a000c;
         public static final int cityText=0x7f0a0001;
@@ -51,14 +52,36 @@ public final class R {
         public static final int streetText=0x7f0a0004;
         public static final int tipeOfRoadSinner=0x7f0a0009;
         public static final int typesSpinner=0x7f0a0005;
+=======
+        public static final int action_settings=0x7f0a0011;
+        public static final int backButton=0x7f0a000e;
+        public static final int backButtonDesc=0x7f0a0001;
+        public static final int cityText=0x7f0a0003;
+        public static final int countryText=0x7f0a0004;
+        public static final int descriptionTextArea=0x7f0a0000;
+        public static final int nameText=0x7f0a0002;
+        public static final int nationalitiesSpinner=0x7f0a0008;
+        public static final int noNumberCheckbox=0x7f0a000a;
+        public static final int numberText=0x7f0a0005;
+        public static final int priceBar=0x7f0a000d;
+        public static final int priceTextView2=0x7f0a000c;
+        public static final int restauranteslistView=0x7f0a0010;
+        public static final int resultadoArea=0x7f0a000f;
+        public static final int searchButton=0x7f0a0009;
+        public static final int streetText=0x7f0a0006;
+        public static final int tipeOfRoadSinner=0x7f0a000b;
+        public static final int typesSpinner=0x7f0a0007;
+>>>>>>> origin/Unstable
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_results=0x7f030001;
+        public static final int activity_description=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_results=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
-        public static final int results=0x7f090001;
+        public static final int description=0x7f090000;
+        public static final int main=0x7f090001;
+        public static final int results=0x7f090002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -67,6 +90,10 @@ public final class R {
         public static final int city=0x7f06000a;
         public static final int country=0x7f060007;
         public static final int hello_world=0x7f060012;
+<<<<<<< HEAD
+=======
+        public static final int nationality=0x7f060015;
+>>>>>>> origin/Unstable
         public static final int noNumber=0x7f06000e;
         public static final int number=0x7f06000d;
         public static final int price=0x7f060008;
@@ -78,7 +105,13 @@ public final class R {
         public static final int spinnerPrompt=0x7f060005;
         public static final int street=0x7f06000b;
         public static final int title=0x7f060002;
+<<<<<<< HEAD
         public static final int title_activity_results=0x7f060011;
+=======
+        public static final int title_activity_description=0x7f060013;
+        public static final int title_activity_results=0x7f060011;
+        public static final int type=0x7f060014;
+>>>>>>> origin/Unstable
         public static final int typeFieldName=0x7f060006;
     }
     public static final class style {

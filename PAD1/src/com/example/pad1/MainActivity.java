@@ -18,6 +18,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 public class MainActivity extends Activity{
 
 	@Override
@@ -29,6 +30,9 @@ public class MainActivity extends Activity{
 		final SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);
 
 		search.setOnClickListener(new OnClickListener() {
+=======
+public class MainActivity extends Activity /*implements OnSeekBarChangeListener */{
+>>>>>>> origin/Unstable
 
 			@Override
 			public void onClick(View v) {
@@ -82,6 +86,7 @@ public class MainActivity extends Activity{
 				}else{
 					nationalityValue = nationality.getSelectedItem().toString();
 				}
+<<<<<<< HEAD
 				float priceValue;
 				if(priceBar.getProgress() > 0){
 					priceValue = priceBar.getProgress();
@@ -102,6 +107,24 @@ public class MainActivity extends Activity{
 						, nationalityValue
 						, priceValue);
 
+=======
+				
+				SeekBar sb = (SeekBar) findViewById(R.id.priceBar);
+				float price = sb.getProgress();
+				if(price == 0) price = -1;
+				//Log.v("Hola !!!!!!!!!!!!", Integer.toString(streetType.getSelectedItemPosition()));
+				Restaurant r = new Restaurant(restaurantNameValue
+											, countryValue
+											, cityValue
+											, streetTypeValue
+											, streetValue
+											, noNumberValue
+											, streetNumberValue
+											, typeValue
+											, nationalityValue
+											, price);
+				
+>>>>>>> origin/Unstable
 				RestaurantFinder restFindr = new RestaurantFinder();
 				restFindr.iniciaRestaurantes();
 				ArrayList<Restaurant> restaurants = restFindr.buscaRestaurante(r);
@@ -109,6 +132,7 @@ public class MainActivity extends Activity{
 				b.putParcelableArrayList("restaurants", (ArrayList<? extends Parcelable>) restaurants);
 				changeWindow.putExtra("restaurants", b);
 				startActivity(changeWindow);
+<<<<<<< HEAD
 
 
 			}//end of onClick
@@ -128,22 +152,54 @@ public class MainActivity extends Activity{
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
+=======
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);
+				
+			}
+		});
+        
+        
+        //-----------PRICE SEEK BAR----------------------------------------------------------------------------
+        
+        SeekBar priceBar = (SeekBar) findViewById(R.id.priceBar);        
+       
+        priceBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+            TextView priceText = (TextView) findViewById(R.id.priceTextView2);
+            String auxPrice = getResources().getString(R.string.price);
+            String anyPrice = getResources().getString(R.string.priceText);
+        	
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+				
+>>>>>>> origin/Unstable
 				if(progress == 0)
 					priceText.setText(anyPrice);
 				else
 					priceText.setText("" + auxPrice + " " + progress + "€");
+<<<<<<< HEAD
 
 			}//end of onProgressChanged
+=======
+				
+			}
+>>>>>>> origin/Unstable
 
 			@Override
 			public void onStartTrackingTouch(SeekBar seekBar) {
 				// TODO Auto-generated method stub
+<<<<<<< HEAD
 
 			}//end of onStartTrackingTouch
+=======
+				
+			}
+>>>>>>> origin/Unstable
 
 			@Override
 			public void onStopTrackingTouch(SeekBar seekBar) {
 				// TODO Auto-generated method stub
+<<<<<<< HEAD
 
 			}//end of onStopTrackingTouch
 
@@ -161,6 +217,24 @@ public class MainActivity extends Activity{
 		return true;
 	}
 
+=======
+				
+			}
+        	
+        });
+        
+        //----------------------------------------------------------------------------------------------------
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+>>>>>>> origin/Unstable
 }
 
 

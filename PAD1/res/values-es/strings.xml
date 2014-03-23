@@ -56,5 +56,7 @@
         <item>Avenida</item>
         <item>Carretera</item>
     </string-array>
-
+	<string name="title_activity_description">Descripción</string>
+    <string name="type">Tipo de comida</string>
+    <string name="nationality">Nacionalidad</string>
 </resources>
