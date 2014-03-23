@@ -17,13 +17,13 @@ public class Description extends Activity {
 		Restaurant r = (Restaurant)getIntent().getParcelableExtra("restaurante");
 		TextView tv = (TextView) findViewById(R.id.descriptionTextArea);
 		String texto = "";
-		texto+="Nombre: " + r.getName() + "\n";
-		texto+="País: " + r.getCountry() + "\n";
-		texto+="Ciudad: " + r.getCity() + "\n";
+		texto+=getResources().getString(R.string.resName) + ": " + r.getName() + "\n";
+		texto+=getResources().getString(R.string.country)+ ": " + r.getCountry() + "\n";
+		texto+=getResources().getString(R.string.city) + ": " + r.getCity() + "\n";
 		texto+=r.getLocationType() + ": " + r.getLocation() + " " + r.getLocationNumber() + "\n";
-		texto+="Tipo: " + r.getFoodType() + "\n";
-		texto+="Nacionalidad: " + r.getFoodNationality() + "\n";
-		texto+="Precio: " + r.getMeanPrice() + "\n";
+		texto+=getResources().getString(R.string.type) + ": " + r.getFoodType() + "\n";
+		texto+=getResources().getString(R.string.nationality) + ": " + r.getFoodNationality() + "\n";
+		texto+=getResources().getString(R.string.price) + ": " + r.getMeanPrice() + "\n";
 		tv.setText(texto);
 		
 		Button b = (Button) findViewById(R.id.backButtonDesc);
