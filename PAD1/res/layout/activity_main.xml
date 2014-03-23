@@ -138,10 +138,6 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/priceTextView2"
         android:contentDescription="@string/price"/>
-<<<<<<< HEAD
-    
-=======
->>>>>>> origin/Unstable
 
     
 
