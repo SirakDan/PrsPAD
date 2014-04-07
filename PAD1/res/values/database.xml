@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restaurants>
+    <restaurant>
+        <name>Restaurante Quico</name>
+        <country>Spain</country>
+        <city>Madrid</city>
+        <locationType>Street</locationType>
+        <location>Falsa</location>
+        <noNumber>true</noNumber>
+        <locationNumber>123</locationNumber>
+        <foodType>Traditional</foodType>
+        <foodNationality>Spanish</foodNationality>
+        <meanPrice>10.0</meanPrice>
+    </restaurant>
+</restaurants>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restaurants>
+    <restaurant>
+        <name>Restaurante Quico</name>
+        <country>España</country>
+        <city>Madrid</city>
+        <locationType>Calle</locationType>
+        <location>Falsa</location>
+        <noNumber>true</noNumber>
+        <locationNumber>123</locationNumber>
+        <foodType>Tradicional</foodType>
+        <foodNationality>Española</foodNationality>
+        <meanPrice>10.0</meanPrice>
+    </restaurant>
+    <restaurant>
+        <name>La Colmena</name>
+        <country>España</country>
+        <city>Pamplona</city>
+        <locationType>Calle</locationType>
+        <location>Tercio</location>
+        <noNumber>true</noNumber>
+        <locationNumber>13</locationNumber>
+        <foodType>Creativa</foodType>
+        <foodNationality>Japonesa</foodNationality>
+        <meanPrice>30.0</meanPrice>
+    </restaurant>
+</restaurants>
